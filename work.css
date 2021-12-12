@@ -50,6 +50,7 @@ table {
 .wrap{
     width: 1000px;
     font-family: Verdana;
+    margin: 0 auto;
 }
 
 /* link */
