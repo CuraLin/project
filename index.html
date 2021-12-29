@@ -5,21 +5,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="all.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name='description' content='網站描述文字' />
+
+    <meta property="og:title" content="FB的標題" />
+    <meta property="og:description" content="FB的描述">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="FB的圖片" />
+    <link rel="stylesheet" href="css/all.css">
+    <title>多頁式網站</title>
 </head>
 
 <body>
     <div class="wrap">
         <div class="header">
-            <a href="index.html">首頁</a>
-            <a href="course.html">課程</a>
-            <a href="faq.html">問答</a>
+            <div class="nav">
+                <h1><a href="#">hex school</a></h1>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="course.html">課程</a></li>
+                        <li><a href="qa.html">問答</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="banner">
+
+                <h2>歡迎來到<span>六角學院</span></h2>
+                <h2>帶你一起攻略前端設計</h2>
+                <a href="#data" class=" hvr-wobble-vertical">
+                    <buttom>馬上去註冊 <div class="banner-text">➜</div>
+                    </buttom>
+                </a>
+
+            </div>
+
         </div>
-        <div class="content">
-            首頁內容
+        <div class="content-index">
+
+            <div class="course">
+                <div class="main-top">
+                    <div class="main-text">
+                        <h2>精選課程</h2>
+                        <h3>幫助你拿到前端工程師的門票</h3>
+                    </div>
+
+                    <a href="#">更多課程</a>
+                </div>
+                <ul class="item">
+                    <li class=" hvr-wobble-vertical"><img src="/img/html5.png" alt="html5">
+                        <h2>Html 5 基礎教學</h2>
+                        <p>主流前端網站設計的基礎，透過實際的範例，瞭解正確的網站開發流程。</p>
+                    </li>
+
+                    <li class=" hvr-wobble-vertical"><img src="/img/rwd.png" alt="rwd">
+                        <h2>響應式網站設計</h2>
+                        <p>六角學院提供業界響應式開發方法，讓學生瞭解完善的行動版開發觀念。</p>
+                    </li>
+                    <li class=" hvr-wobble-vertical"><img src="/img/jQuery.png" alt="jQuery">
+                        <h2>jQuery 實戰教學</h2>
+                        <p>分為四大主題:變數的使用、操作DOM、基本數學運算和套件運用。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="compare">
+                <h2>課程比較</h2>
+                <h3>線上課程與實體課程差異</h3>
+                <table class="compare-table">
+                    <tr>
+                        <th class="compare-text">項目</th>
+                        <th class="compare-th compare-w">六角學院 線上課程</th>
+                        <th class="compare-th compare-w">一般線上課程</th>
+                        <th class="compare-th ">一般實體課程</th>
+                    </tr>
+                    <tr>
+                        <td class="compare-text">費用</td>
+                        <td class="compare-color">較低</td>
+                        <td class="compare-color">較低</td>
+                        <td>較高</td>
+                    </tr>
+                    <tr>
+                        <td class="compare-text">學習效果</td>
+                        <td>一般</td>
+                        <td>較低</td>
+                        <td class="compare-color">很好</td>
+                    </tr>
+                    <tr>
+                        <td class="compare-text">Code review</td>
+                        <td class="compare-color">有</td>
+                        <td>無</td>
+                        <td>不一定</td>
+                    </tr>
+                    <tr>
+                        <td class="compare-text">課程更新速度</td>
+                        <td class="compare-color">普通</td>
+                        <td class="compare-color">普通</td>
+                        <td>較慢</td>
+                    </tr>
+                    <tr>
+                        <td class="compare-text">多次複習</td>
+                        <td class="compare-color">可</td>
+                        <td class="compare-color">可</td>
+                        <td>不可</td>
+                    </tr>
+                    <tr>
+                        <td class="compare-text">字幕</td>
+                        <td class="compare-color">有</td>
+                        <td>不一定</td>
+                        <td>板書</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="message">
+                <h2>你就是六角的下一位學生!<br>
+                    快留下資料讓我們認識你吧
+                </h2>
+
+                <form id="data" action="index.html">
+                    <input type="text" name="name" placeholder="你的名字是?">
+                    <input type="text" name="mail" placeholder="example@mail.com.tw">
+                    <input type="submit" value="送出" class="hvr-wobble-vertical">
+                </form>
+
+
+            </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="logo"> <img src="/img/logo.png" alt="logo">
+                <h2>©2018 hexschool</h2>
+            </div>
+
+            <ul class="footer-menu">
+                <li><a href="#" title="fb" class="hvr-wobble-vertical "><img src="/img/fb.png" alt="fb"></a></li>
+                <li><a href="#" title="twitter" class="hvr-wobble-vertical "><img src="/img/tw.png" alt="twitter"></a>
+                </li>
+                <li><a href="#" title="ig" class="hvr-wobble-vertical "><img src="/img/ig.png" alt="ig"></a></li>
+            </ul>
+        </div>
     </div>
 
 </body>
